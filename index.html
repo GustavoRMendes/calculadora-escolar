@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Ponderada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="titulo">Calculadora de Média Escolar</h1>
+        <p class="paragrafo">Descubra a média de suas notas!</p>
+        <div id="formulario">
+            <form action="#" method="post" autocomplete="off">
+                <label for="nome">Nome do Aluno: </label> <br>
+                <input type="text" name="nome" id="nome" placeholder="Primeiro nome" > <br>
+                <input type="number"  id="nota" placeholder="nota1">
+                <!-- min="0.0" max="10.0" step="0.1"
+                placeholder="Primeira Nota" required -->
+                <br>
+                 <br>
+                  <input type="number" id="notinha" placeholder="nota2"> 
+                  <!-- // min="0.0" max="10.0" step="0.1" placeholder="Segunda Nota" required -->
+                <br>
+                <button id="btn" onclick="calcular()">
+                    Calcular
+                </button>
+            </form>
+            <div id="error"></div>
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
